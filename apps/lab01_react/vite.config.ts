@@ -8,6 +8,7 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), legacy()],
+  base: "/MobileWeb-Lab/lab01_react/",
   build: {
     outDir: path.resolve(__dirname, "../../docs/lab01_react"),
     emptyOutDir: true,
