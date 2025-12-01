@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KKU Campus Guide</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <canvas id="logoCanvas" width="200" height="80"></canvas>
+      <h1>KKU Campus Guide</h1>
+      <p>รหัสนักศึกษา: 663380026-5 | ชื่อ: ศิวภาส ภูศรีอ่อน</p>
+    </header>
+
+    <nav>
+      <a href="#place1">สระพลาสติก</a>
+      <a href="#place2">คอมเพล็กซ์</a>
+      <a href="#place3">กังสดาล</a>
+      <a href="#place4">หอประชุมกาญจนาภิเษก</a>
+    </nav>
+
+    <main>
+      <!-- สถานที่ 1 -->
+      <section id="place1" class="place-card">
+        <h2>สระพลาสติก (Plastic Lake)</h2>
+        <p>แลนด์มาร์คยอดฮิตสำหรับถ่ายรูปและนั่งพักผ่อน</p>
+        <div class="img-row">
+          <img src="images/plastic1.jpg" />
+          <img src="images/plastic2.jpg" />
+        </div>
+      </section>
+
+      <!-- สถานที่ 2 -->
+      <section id="place2" class="place-card">
+        <h2>คอมเพล็กซ์</h2>
+        <p>ศูนย์อาหารและรวมร้านค้าสำคัญของนักศึกษา</p>
+        <div class="img-row">
+          <img src="images/complex1.jpg" />
+          <img src="images/complex2.jpg" />
+        </div>
+      </section>
+
+      <!-- สถานที่ 3 -->
+      <section id="place3" class="place-card">
+        <h2>กังสดาล</h2>
+        <p>ย่านการศึกษาวิศวะ – วิทย์คอม จุดขึ้นรถที่สำคัญ</p>
+        <div class="img-row">
+          <img src="images/kangsadan1.jpg" />
+          <img src="images/kangsadan2.jpg" />
+        </div>
+      </section>
+
+      <!-- สถานที่ 4 -->
+      <section id="place4" class="place-card">
+        <h2>หอประชุมกาญจนาภิเษก</h2>
+        <p>สถานที่จัดงานสำคัญของมหาวิทยาลัย</p>
+        <div class="img-row">
+          <img src="images/hall1.jpg" />
+          <img src="images/hall2.jpg" />
+        </div>
+      </section>
+
+      <!-- ฟอร์มแนะนำสถานที่ -->
+      <section id="form-section">
+        <h2>แนะนำสถานที่เพิ่มเติม</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="fba1c28a-90e7-49a2-867b-e22eb25b2c64"
+          />
+          <input type="hidden" name="from_name" value="KKU Campus Guide" />
+          <input
+            type="hidden"
+            name="subject"
+            value="KKU Campus Guide - แนะนำสถานที่ใหม่"
+          />
+
+          <label>ชื่อสถานที่</label>
+          <input type="text" name="place" required />
+
+          <label>รายละเอียด</label>
+          <textarea name="detail" required></textarea>
+
+          <label>URL รูปภาพ</label>
+          <input type="url" name="image_url" required />
+
+          <button type="submit">ส่งข้อมูล</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 KKU Campus Guide</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
