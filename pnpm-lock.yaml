@@ -286,6 +286,9 @@ importers:
 
   apps/lab05-photo-react:
     dependencies:
+      '@capacitor/android':
+        specifier: 8.0.0
+        version: 8.0.0(@capacitor/core@8.0.0)
       '@capacitor/app':
         specifier: 8.0.0
         version: 8.0.0(@capacitor/core@8.0.0)
