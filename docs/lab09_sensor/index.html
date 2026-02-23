@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab09 Sensors – ศิวภาส ภูศรีอ่อน</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="frame">
+      <header class="hero">
+        <h1>Lab09 Sensors</h1>
+        <p class="subtitle">การทดสอบ Motion Sensor ด้วย Ionic + Capacitor</p>
+      </header>
+
+      <section class="card">
+        <h2>วัตถุประสงค์</h2>
+        <ul>
+          <li>เรียนรู้การเข้าถึง Motion Sensor บนอุปกรณ์พกพา</li>
+          <li>ทดสอบการนับจำนวนครั้งของการยกแขน (Repetition)</li>
+          <li>ฝึกใช้งาน Capacitor Plugins (Motion, TTS, Haptics)</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>ตัวอย่างหน้าจอแอป (Screenshots)</h2>
+
+        <div class="gallery">
+          <!-- ตัวอย่าง: หน้าเริ่มต้น -->
+          <figure>
+            <img src="./img/9_1.png" alt="หน้าเริ่มต้น" />
+            <figcaption>หน้าเริ่มต้นแอป</figcaption>
+          </figure>
+
+          <!-- ตัวอย่าง: ขณะนับ -->
+          <figure>
+            <img src="./img/9_2.png" alt="ขณะนับครั้ง" />
+            <figcaption>ขณะนับการยกแขน</figcaption>
+          </figure>
+
+          <!-- ตัวอย่าง: หน้าสถิติ -->
+          <figure>
+            <img src="./img/9_4.png" alt="หน้าสถิติ" />
+            <figcaption>หน้าสถิติผลลัพธ์</figcaption>
+          </figure>
+
+          <!-- คุณจะเพิ่มกรณีอื่น ๆ ได้ไม่จำกัด -->
+
+          <figure>
+            <img src="./img/9_5.png" alt="เร็วเกินไป" />
+            <figcaption>กรณียกช้าเกินไป</figcaption>
+          </figure>
+
+          <figure>
+            <img src="./img/9_6.png" alt="ช้าเกินไป" />
+            <figcaption>กรณียกเร็วเกินไป</figcaption>
+          </figure>
+
+          <figure>
+            <img src="./img/9_7.png" alt="เอียงข้าง" />
+            <figcaption>กรณียกเอียงข้าง</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>สรุปการทำงาน</h2>
+        <p>
+          แอปใช้ Motion Sensor เพื่อตรวจจับการเคลื่อนไหวของแขน
+          เมื่อผู้ใช้ยกแขนขึ้น-ลงครบหนึ่งรอบ ระบบจะนับเป็น 1 ครั้ง
+          พร้อมแจ้งเตือนด้วยเสียง (Text-to-Speech) และการสั่น (Haptics)
+        </p>
+      </section>
+
+      <footer class="footer">
+        <p>663380026-5 ศิวภาส ภูศรีอ่อน</p>
+        <p>รายวิชา Mobile Web Application Development</p>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
